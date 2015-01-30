@@ -1,4 +1,4 @@
-package polymorfi_opg5;
+package lokaler;
 
 public class Lokale {
 
