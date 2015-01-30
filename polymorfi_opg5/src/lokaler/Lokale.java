@@ -2,8 +2,8 @@ package lokaler;
 
 public abstract class Lokale {
 
-	private int areal = 0;
-	private int kapacitet = 0;
+	protected int areal = 0;
+	protected int kapacitet = 0;
 	
 	public Lokale(int areal, int kapacitet) {
 		this.areal = areal;
@@ -14,6 +14,14 @@ public abstract class Lokale {
 		areal = other.areal;
 		kapacitet = other.kapacitet;
 	}
+	
+	public abstract int getAreal();
+	
+	public abstract int getKapacitet();
+	
+	public abstract void setAreal(int areal);
+	
+	public abstract void setKapacitet(int kapacitet);
 
 	@Override
 	public String toString() {
